@@ -58,3 +58,4 @@ $('.menu, nav').click(function(){
         $('.page.active').fadeOut(800).removeClass('active');
         $('.page.'+elementName).delay(1000).fadeIn(1000).addClass('active');
     });
+    
