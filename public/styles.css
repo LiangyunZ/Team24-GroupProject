@@ -125,11 +125,12 @@ nav ul.active{
 
 nav ul li {
   margin:20px 0;
+  line-height: 2;
 }
 
 nav ul li a {
   color:#fff;
-  font-size:48px;
+  font-size:28px;
 }
 
 .menu {
