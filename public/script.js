@@ -20,7 +20,7 @@ $('.menu, nav').click(function(){
     
     /*MOUSEMOVE TRANSFORM 3D*/
     
-    !(function ($doc, $win) {
+!(function ($doc, $win) {
         var screenWidth = $win.screen.width / 2,
             screenHeight = $win.screen.height / 2,
             $elems = $doc.getElementsByClassName("elem"),
@@ -35,7 +35,7 @@ $('.menu, nav').click(function(){
         }
     
     
-        $doc.addEventListener('mousemove', function (e) {
+$doc.addEventListener('mousemove', function (e) {
             var centroX = e.clientX - screenWidth,
                 centroY = screenHeight - (e.clientY + 13),
                 degX = centroX * 0.04,
@@ -52,10 +52,9 @@ $('.menu, nav').click(function(){
     
     
     
-    $('nav ul li').on('click', function(){
+$('nav ul li').on('click', function(){
         /*here we make a variable to get the name of the clicked li*/
         var elementName = $(this).attr('name');
         $('.page.active').fadeOut(800).removeClass('active');
         $('.page.'+elementName).delay(1000).fadeIn(1000).addClass('active');
     });
-    
