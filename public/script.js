@@ -58,3 +58,51 @@ $('nav ul li').on('click', function(){
         $('.page.active').fadeOut(800).removeClass('active');
         $('.page.'+elementName).delay(1000).fadeIn(1000).addClass('active');
     });
+
+
+/*Removal Requests Page*/
+const requests = [];
+
+fetch('/api',{
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+})
+    .then((fromServer) => fromServer.json())
+    .then((jsonFromServer) => requests.push(...jsonFromServer))
+    .catch((err) => {
+      console.log(err);
+    });
+
+function findMatches(wordToMatch, requests) {
+    return requests.filter(place => {
+        const regex = new RegExp(wordToMatch, 'gi');
+        return place.service_request.match(regex) || place.date_request_opened.match(regex) || place.request_status.match(regex) 
+        || place.sla.match(regex) || place.request_name.match(regex) || place.street_address.match(regex) 
+    });
+}
+
+function displayMatches() {
+    const matchArray = findMatches(this.value, requests);
+    const html = matchArray.map(place => {
+        return `
+        <li>
+            <span class="service_request">${place.service_request}</span></br>
+            <span class="date_request_opened">${place.date_request_opened}</span></br>
+            <span class="request_status">${place.request_status}</span></br>
+            <span class="request_name">${place.city}, ${place.request_name}</span>
+            <span class="street_address">${place.street_address}</span>
+        </li>
+        `;
+    }).join('');
+    suggestions.innerHTML = html;
+    
+   console.log(matchArray);
+}
+
+const searchInput = document.querySelector('.search');
+const suggestions = document.querySelector('.suggestions');
+
+searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
