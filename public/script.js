@@ -77,7 +77,7 @@ function display() {
   var firstName = sessionStorage.getItem('firstName');
   var lastName = sessionStorage.getItem('lastName');
   var email = sessionStorage.getItem('email');
-  target.innerHTML = "Your name is " + firstName + " " + lastName + " and your email is " + email;
+  target.innerHTML = "Your name is " + firstName + " " + lastName + " and you will get updates through " + email;
 }
 
 //Set the Session Storage
