@@ -252,17 +252,6 @@ section.active {
   transform:rotateX(0deg);
 }
 
-
-.form{
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective:1000px;
-  overflow: hidden;
-  background-color: #2a2b2f;
-}
-
 input{
   height: 40px;
   border-radius: 10px;
@@ -276,5 +265,13 @@ input{
 }
 
 .row {
-  margin: 20px;
+  margin-top: 20px;
+}
+
+#order-wrap{
+  margin-top:200px;
+}
+
+#submit{
+  margin-top:20px;
 }

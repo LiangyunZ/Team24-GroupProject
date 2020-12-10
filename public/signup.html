@@ -24,27 +24,25 @@
 </div>
 
 <div class="section-wrap">
-    <div class="form">  
-        <h2 class="form-header">sign up to get recent updates</h2>
-            <div class="form-content">
-                <div class="row">
-                        <label for="first-name">First Name</label>
-                        <input id="first-name" type="text" />
-                </div><!--.row-->
-                
-                <div class="row">
-                        <label for="last-name">Last Name</label>
-                        <input id="last-name" type="text" />
-                </div><!--.row-->
-
-                <div class="row">
-                        <label for="email">Email</label>
-                        <input id="email" type="text" />
-                </div><!--.row-->
-                
-                <button onclick="store();" id="submit" value="Click to Submit"/>Submit</button>
-            </div>
-    </div> 
+  <div id="order-wrap">
+    <div id="info-wrap">
+      <h2>sign up to get updates</h2>
+      <div class="row">
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" />
+      </div><!--.row-->
+      <div class="row">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" />
+      </div><!--.row-->
+      <div class="row">
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+      </div>
+      <button onclick="store();" id="submit" value="Click to Submit"/>Submit</button>
+    </div><!--info-wrap-->
+    <div id="target"></div>
+  </div>
 </div>
 
 
