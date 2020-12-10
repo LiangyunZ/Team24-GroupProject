@@ -276,3 +276,32 @@ input{
 #submit{
   margin-top:20px;
 }
+
+#content ul {
+  max-width: 400px;
+  margin-left: 0px;
+  padding: 0px;
+  width: auto;
+  list-style: none;
+  display: block;
+}
+
+#content li{
+  background: gray;
+  max-width: 400px;
+  margin-left: 0px;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.name {
+  font-size: 24;
+  color: black;
+  font-family: 'Itim', cursive;
+}
+
+.results {
+  font-size: 20;
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;    
+}
