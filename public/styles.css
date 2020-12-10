@@ -21,9 +21,26 @@ body {
   font-family: 'Exo', sans-serif;
   color:#fff;
   font-weight:200;
+  transition:0.8s all ease-in-out;
+  -webkit-transition:0.8s all ease-in-out;
+  overflow:hidden;
+  opacity: 1;
+  transform:rotateX(0deg);
+}
+
+body.fade-out {
+  opacity: 0.2;
+  transform:scale(0.5);
+  -webkit-transform:scale(0.5);
+}
+
+body.manu {
+  transform:scale(0.5);
+  -webkit-transform:scale(1);
 }
 
 h1, h2, h3 {
+  font-size: large;
   font-family: 'Exo', sans-serif;
   font-size:48px;
   text-transform:uppercase;
@@ -211,24 +228,53 @@ nav ul li a {
   transform:rotate(-45deg);
 }
 .section-wrap {
-    height: 100vh;
+  height: 100vh;
   width: 100vw;
   position: relative;
   transform-style:preserve-3d;
   perspective:1000px;
-    transition:0.8s all ease-in-out;
+  transition:0.8s all ease-in-out;
   -webkit-transition:0.8s all ease-in-out;
   overflow:hidden;
   opacity: 1;
+  background-color: #323232;
   
 }
 .section-wrap.active{
   opacity: 0.2;
   transform:scale(0.5);
   -webkit-transform:scale(0.5);
+  background-color: #323232;
   
 }
 
 section.active {
   transform:rotateX(0deg);
+}
+
+
+.form{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective:1000px;
+  overflow: hidden;
+  background-color: #2a2b2f;
+}
+
+input{
+  height: 40px;
+  border-radius: 10px;
+  width: 250px;
+  outline:0;
+  border: 0;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #1c1d21;
+  color:#fff;
+}
+
+.row {
+  margin: 20px;
 }
