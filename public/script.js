@@ -2,6 +2,7 @@ document.body.className += ' fade-out';
     $(function() {
       $('body').removeClass('fade-out');
   });
+
 /*MENU*/
 
 $('.menu, nav').click(function(){
@@ -23,7 +24,7 @@ $('.menu, nav').click(function(){
     }
     });
     
-    /*MOUSEMOVE TRANSFORM 3D*/
+/*MOUSEMOVE TRANSFORM 3D*/
     
 !(function ($doc, $win) {
         var screenWidth = $win.screen.width / 2,
@@ -57,12 +58,12 @@ $doc.addEventListener('mousemove', function (e) {
     
     
     
-$('nav ul li').on('click', function(){
-        /*here we make a variable to get the name of the clicked li*/
-        var elementName = $(this).attr('name');
-        $('.page.active').fadeOut(800).removeClass('active');
-        $('.page.'+elementName).delay(1000).fadeIn(1000).addClass('active');
-    });
+///$('nav ul li').on('click', function(){
+   ///     /*here we make a variable to get the name of the clicked li*/
+      ///  var elementName = $(this).attr('name');
+      ///  $('.page.active').fadeOut(800).removeClass('active');
+      ///  $('.page.'+elementName).delay(1000).fadeIn(1000).addClass('active');
+  ///  });
 
 
 /* Signup Page*/
