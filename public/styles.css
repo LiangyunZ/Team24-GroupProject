@@ -305,3 +305,7 @@ input{
   color: black;
   font-family: 'Open Sans Condensed', sans-serif;    
 }
+
+#mapid { 
+  height: 180px; 
+}
