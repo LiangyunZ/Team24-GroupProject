@@ -151,4 +151,4 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     tileSize: 512,
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoiaGV5ZGF5MyIsImEiOiJja2lrcG81NnAwYzg0MzBxbWl0NmR2ZmEzIn0.AnE-p4rTtbrvqQuK3yn-gA'
-}).addTo(mymap);
+}).addTo(map);
