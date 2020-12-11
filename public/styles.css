@@ -306,12 +306,3 @@ input{
   font-family: 'Open Sans Condensed', sans-serif;    
 }
 
-map { 
-  position: absolute;
-  height: 180px;
-  top: 5;
-  bottom: 0;
-  left: 0;
-  right: 0; 
-
-}
